@@ -1,0 +1,508 @@
+---
+title: "Lemhi River *O. mykiss* Introgression"
+author: "Mike Ackerman"
+date: "May 02, 2017"
+output: 
+  html_document:
+    toc:  true
+    toc_float: true
+    theme: journal
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+rm(list = ls())
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(knitr)
+library(captioner)
+library(xtable)
+setwd('C:/Users/mikea/Dropbox/lemhiPahsimeroiMykissGenetics/2017/Markdown/')
+```
+
+```{r captioner, echo = FALSE, results = 'hide'}
+figs <- captioner(prefix = 'Figure')
+tabs <- captioner(prefix = 'Table')
+tabs(name = 'tab_1', 'Adult (putative) steelhead collections from tributary weirs in the Lemhi River drainage. The stream, collection year, collection code, number sampled, and number successfully genotyped for each collection are shown.')
+tabs(name = 'tab_2', 'Juvenile emigrant collections from rotary screw traps in the Lemhi River drainage. The stream, collection year, collection code, number sampled, and number successfully genotyped for each collection are shown.')
+tabs(name = 'tab_3', 'Collections from roving electrofishing surveys in the Lemhi River drainage. Collections potentially contain a mixture of juvenile and adult individuals. The stream, collection year, collection code, number sampled, and number successfully genotyped for each collection are shown.')
+tabs(name = 'tab_4', 'Parentage-based tagging (PBT) results for adult (putative) steelhead captured and sampled at tributary weirs throughout the Lemhi River drainage. For each collection, we show the number of individuals that were successfully genotyped and analyzed (n Analyzed), and of those, how many assigned to hatchery parents in the Snake River parental broodstock database. For those assigned, we show the hatchery and brood year of origin.')
+tabs(name = 'tab_5', 'The estimated lineage for individuals captured in rotary screw traps (RSTs) in the Lemhi River drainage.')
+figs(name = 'fig_1', 'Proportional membership coefficients (${q_i}$) for juveniles captured at rotary screw traps (RST) to inferred groups (*K* = 2 clusters) representing native redband (red) and non-native coastal (blue) lineages of *Onchorhynchus mykiss*. Analysis based on 187 single-nucleotide polymorphisms was performed in STRUCTURE version 2.3.4 (Pritchard et al. 2000), with default settings of admixture and correlated allele frequencies, a burn-in length of 100,000 iterations, and 250,000 iterations of the Markov chain Monte-Carlow. Each individual vertical bar represents one fish.')
+figs(name = 'fig_2', 'Proportional membership coefficients (${Q_i}$) for roving electrofishing collections in the Lemhi River drainage to inferred groups (*K* = 2 clusters) representing native redband (red) and non-native coastal (blue) lineages of *Onchorhynchus mykiss*. Analysis based on 187 single-nucleotide polymorphisms was performed in STRUCTURE version 2.3.4 (Pritchard et al. 2000), with default settings of admixture and correlated allele frequencies, a burn-in length of 100,000 iterations, and 250,000 iterations of the Markov chain Monte-Carlow.')
+figs(name = 'fig_3', 'Length (mm) frequency histograms for individuals captured during roving electrofishing surveys in the Lemhi River drainage. Each individual is color-coded according to its inferred lineage from the STRUCTURE analysis.')
+figs(name = 'fig_4', 'Proportional membership coefficients (${q_i}$) for individuals captured during roving electrofishing surveys in the Lemhi River to inferred groups (*K* = 2 clusters) representing native redband (red) and non-native coastal (blue) lineages of *Onchorhynchus mykiss*. Analysis based on 187 single-nucleotide polymorphisms was performed in STRUCTURE version 2.3.4 (Pritchard et al. 2000), with default settings of admixture and correlated allele frequencies, a burn-in length of 100,000 iterations, and 250,000 iterations of the Markov chain Monte-Carlow. Each individual vertical bar represents one fish.')
+```
+
+```{r readData, eval = TRUE, echo = FALSE}
+collections <- read.csv('data/collections.csv')
+individuals <- read.csv('data/indData.csv')
+pbtSummary  <- read.csv('data/pbtSummary.csv')
+```
+
+# Introduction
+
+Anthropogenic changes to the spawning, rearing, and migration habitats for steelhead *Oncorhynchus mykiss* within the Snake and Columbia rivers have contributed to substantial declines in abundance (Raymond 1988; Tabor *et al.* 1993; Williams *et al.* 1999). As a result, steelhead in the Snake River Distinct Population Segment (DPS) were listed as threatened under the Endangered Species Act (ESA) in 1997 (Endangered Species Act of 1973; NMFS 1997). Since ESA listing, extensive research has been toward management of hydropower systems on the mainstem Snake and Columbia rivers to improve survival of juvenile salmon and steelhead migrating downstream through the system (Williams *et al.* 1999; Matter and Sandford 2003; Waples *et al.* 2008). More recently, focus has also been towards stream restoration within freshwater spawning and rearing number to improve overall population numbers (NOAA 2008).
+
+The Lemhi River (eastern Idaho) supports populations of steelhead and spring Chinook salmon *O. tshawytscha* both listed as threatened under the ESA. Within the Lemhi River, local co-managers have suggested that insufficient stream flow, loss of access to historically important tributary habitat, and mainstem habitat simplifications are the primary factors leading to decreased abundance and productivity of steelhead and spring Chinook salmon. As a result, restoration activities have been implemented in the Lemhi River to address these factors. Tributary reconnections have been achieved through replacing tributary water diversions with mainstem Lemhi diversions, enabling the reconnection of tributaries, reducing total water withdrawals, and allowing cooler tributary water to enter the mainstem Lemhi River. Simultaneously, restoration actions have addressed tributary passage impediments and improved habitat conditions within tributaries, providing access to relatively intact publicly held land. 
+
+Coinciding with habitat restoration, considerable effort is made in the Lemhi River towards monitoring steelhead and Chinook salmon abundance and productivity. First, three rotary screw traps are operated in the Lemhi River drainage to estimate juvenile emigration abundance and downstream survival. Second, roving electroshocking surveys are conducted in the mainstem Lemhi River and in tributaries throughout the drainage to monitor juvenile abundance, survival, and movement. Finally, weirs are operated in tributaries to monitor and sample adults during their spawning migration. 
+
+Confounding monitoring of the native steelhead population in the Lemhi River is the presence of a sympatric non-native rainbow trout population. Native steelhead in Idaho (and east of Cascade Range) are the anadromous form of redband trout *O. mykiss gairdneri*. Coastal rainbow trout *O. mykiss irideus* are native to the west side of the Cascade Range and may also exhibit an anadromous steelhead life-history when access to the ocean is available. Traditionally, rainbow trout reared in hatcheries for sport fish stocking have been of the *O. mykiss irideus* lineage. Presumably, fertile coastal rainbow trout were stocked in or near the Lemhi River drainage in past decades for sport fishing opportunities and have since become established. Coastal rainbow trout in the Snake River are not ESA listed. However, little is understood regarding interactions between native redband trout *O. mykiss gairdneri* and non-native coastal rainbow trout *O. mykiss irideus* in the drainage. 
+
+In this study, we investigate the ancestry of juvenile and adult *O. mykiss* captured using various methods within the Lemhi River and tributaries. Moreover, we identify hatchery-origin adult steelhead sampled at weirs in select tributaries using parentage-based tagging.
+
+# Methods
+
+Within the Lemhi River, genotype data was generated from 860 *O. mykiss* captured between 2009 and 2013. Samples were from 1) adults collected at tributary weirs (`r tabs('tab_1', display = 'cite')`), 2) juveniles at rotary screw traps (`r tabs('tab_2', display = 'cite')`), and 3) mixed life-stages collected during roving electrofishing surveys throughout the Lemhi River drainage (`r tabs('tab_3', display = 'cite')`). 
+
+### Collections
+
+`r tabs('tab_1')`
+```{r weirCollection, eval = TRUE, echo = FALSE}
+weirTable <- select(collections, Basin, Stream, Year, Pedigree.name, CollectionMethod, SampleSize, NumGenotyped) %>%
+  filter(Basin == 'Lemhi', NumGenotyped > 0, CollectionMethod == 'Weir') %>%
+  select(-Basin, -CollectionMethod)
+kable(weirTable, col.names = c('Stream','Year','Collection Code','n Sampled','n Genotyped'), align = c('l','c','c','c','c'))
+```
+
+`r tabs('tab_2')`
+```{r rstCollection, eval = TRUE, echo = FALSE}
+rstTable <- select(collections, Basin, Stream, Year, Pedigree.name, CollectionMethod, SampleSize, NumGenotyped) %>%
+  filter(Basin == 'Lemhi', NumGenotyped > 0, CollectionMethod == 'Screw trap') %>%
+  select(-Basin, -CollectionMethod)
+kable(rstTable, col.names = c('Stream','Year','Collection Code','n Sampled','n Genotyped'), align = c('l','c','c','c','c'))
+```
+
+`r tabs('tab_3')`
+```{r rovingCollection, eval = TRUE, echo = FALSE}
+rovingTable <- select(collections, Basin, Stream, Year, Pedigree.name, CollectionMethod, SampleSize, NumGenotyped) %>%
+  filter(Basin == 'Lemhi', NumGenotyped > 0, CollectionMethod == 'Electrofishing') %>%
+  select(-Basin, -CollectionMethod)
+kable(rovingTable, col.names = c('Stream','Year','Collection Code','n Sampled','n Genotyped'), align = c('l','c','c','c','c'))
+```
+
+### Genotyping
+
+A tissue sample was taken from each individual; individuals were then released back to the stream. All tissue samples were genotyped at 191 single-nucleotide polymorphisms (SNPs) and a Y-chromosome specific assay that differentiates sex in *O. mykiss* (Campbell *et al.* 2012). DNA was extracted using Nexttec Genomic DNA Isolation Kits from XpressBio (Thurmont, Maryland). Prior to DNA amplification of SNP loci using primer-probe sets (fluorescent tags), an initial PCR preamplification was implemented with whole genomic DNA to jumpstart SNP amplification by increasing the copy number of target DNA regions. The PCR conditions for the preamplification step were as follows: an initial denaturation at 95&deg;C for 15 min, followed by 14 cycles of 95&deg;C for 15 s and 60&deg;C for 4 min, and ending with a final dissociation step at 4&deg;C. Genotyping was performed using Fluidigm 96.96 Dynamic Array Integrated Fluidic Circuits (IFCs). For each genotyping run, 96 samples (including an extraction negative control, a PCR negative control, and a PCR positive control) and 96 TaqMan SNP assays were hand-pipetted onto the 96.96 IFCs. Sample cocktail and SNP assay cocktails recipes are available upon request. Each 96.96 IFC was pressurized, and a Fluidigm IFC Controller HX was used to load the sample mixture and SNP assays into the IFC. Amplification of SNPs on the 96.96 IFCs was performed using the Fluidigm FC1 Cycler. The final SNP amplification protocol was as follows: a thermal mixing step at 70&deg;C for 30 min and 25&deg;C for 10 min; a hot-start step at 95&deg;C for 60 s, followed by 50 cycles of 95&deg;C for 5 s and 58&deg;C for 25 s; and a final cooldown step at 25&deg;C for 10 s. The IFCs were imaged on a Fluidigm EP1 and were analyzed and scored using Fluidigm SNP Genotyping Analysis software. Genomic DNA extraction and amplification methods and SNP genotyping using multiplex 5'-nuclease reactions are described in detail by Seeb *et al.* (2009).
+
+The 191-SNP panel included three SNPs (*Ocl_gshpx-357*, *Omy_Omyclmk438-96*, and *Omy_myclarp404-111*) designed to identify potential *O. mykiss* x cutthroat trout *O. clarkii* hybrids. No individuals in this study were identified as potential hybrids; these three SNPs were removed from all subsequent analyses. In addition, Ackerman *et al.* (2014) identified two SNPs (*Omy_GHSR-121* and *Omy_mapK3-103*) that exhibited linkage disequilibrium in a majority of collections from Snake River steelhead populations. In that study, *Omy_mapK3-103* was the less informative of the locus pair and was dropped from analyses; *Omy_mapK3-103* was also removed from the present study. In total, 187 SNPs were used in all subsequent analyses unless otherwise noted.
+
+### Parentage Analysis
+
+Broodstock from all Snake River hatcheries are genotyped annually as part of a parentage-based tagging (PBT) program which, as an alternative to traditional physical tags, uses multilocus SNP genotypes to determine the origin and age of a sampled hatchery fish through parentag analysis (Steele *et al.* 2013). Parentage-based tagging is typically employed to detect the presence or relative contribution of hatchery-propagated individuals in a sample from the natural environment (Lew *et al.* 2015, Rechiskly *et al.* 2014). We performed parentage assignments for adult (putative) steelhead captured and sampled at weirs in select tributaries of the Lemhi River in 2012. Parentage was performed using 95 SNPs previously demonstrated to provide accurate assignments when both parents are sampled (>99.9% accuracy, Steele *et al.* 2013). We used a PBT baseline of hatchery broodstock genotypes from spawn years 2008 and 2009 to assign fish that spent 1 year in freshwater and 1 or 2 years in the ocean before returning to the Lemhi River drainage. The genotype baseline of hatchery parents is available via FishGen (M. Campbell, IDFG, <https://www.fishgen.net>). Parentage assignments were conducted with SNPPIT (Anderson 2010; <https://github.com/eriqande/snppit/>). A threshold of ${>=}$ 14 LOD (likelihood of difference) was used to identify accurate assignments since this criterion simultaneously minimizes false positive and false negative assignments based on test data sets, and assignments above this threshold rarely disagree with hatchery spawning records or phenotypic sex (Hess *et al.* 2016).
+
+### STRUCTURE Analysis
+
+We used the program STRUCTURE version 2.3.4 (Pritchard *et al*. 2000) to estimate the inferred ancestry of each individual and each collection to two populations(i.e., *K* = 2 clusters) representing (1) native redband trout and (2) non-native coastal rianbow trout. Because the two lineages are highly differentiated, intraspecific introgression should be identified with relative ease (e.g., Matala *et al.* 2014). To verify this, we included four collections of known lineage include two redband and two coastal refernce collections. The reference coastal collections included Ennis Fish Hachery - Erwin strain (*n* = 47) and Hayspur Fish Hatchery - Kamloops strain (*n* = 23). Reference redband collections included steelhead collections from Big Creek (*n* = 47) and Fish Creek (*n* = 42). A 100,000 iteration burn-in and 250,000 iterations of the Markov chain-Monte Carlo were used to estimate group membership to *K* = 2 clusters for each collection and individual. Default parameters of admixture and correlated allele frequencies were used.
+
+# Results
+
+### Weir Adults
+
+We successfully genotyped 122 adult putative steelhead captured and sampled at tributary weirs in the Lemhi River drainage. Of those, we have attempted to assign the 85 individuals sampled in 2012 back to the Snake River hatchery broodstock baseline, of which 17 (20%) assigned back to hatchery parents spawned in 2008 and 2009 (`r tabs('tab_4', display = 'cite')`). Of those assigned, 15 were 1-ocean adults (BY2009) and two were 2-ocean adults (BY2008). Moreover, four fish assigned to Sawtooth hatchery parents; the remaining 13 assigned to Pahsimeroi hatchery parents. We have not yet attempted to assign individuals sampled in 2013 (*n* = 37) to hatchery parents.
+
+`r tabs('tab_4')`
+```{r pbtTable, eval = TRUE, echo = FALSE}
+pbtTable <- select(pbtSummary, stream, pedigree, numAnalyzed, numPbtAssigned, OmySAWT09S, OmyPAHH08S, OmyPAHH09S) %>%
+  filter(numAnalyzed > 0)
+kable(pbtTable, col.names = c('Stream', 'Collection Code','n Analyzed','n Assigned','Sawtooth 09','Pahsimeroi 08','Pahsimeroi 09'))
+```
+
+Moreover, we estimated the proportional ancestry of each of 122 adult putative steelhead sampled at weirs back to the two lineages. As expected, the large majority (*n* = 114; 93.4%) were identified as native redband *O. mykiss gairdneri*. However, eight adults were identified as introgressed between the two lineages: Big Timber 2012 (*n* = 2), Big Timber 2013 (*n* = 1), Bohannon 2012 (*n* = 1), Canyon 2012 (*n* = 1), Hayden 2013 (*n* = 1), Kenney 2012 (*n* = 1), Kenney 2013 (*n* = 1). 
+
+### Rotary Screw Trap Juveniles
+
+We estimated the proportional membership of juvenile emigrants captured at rotary screw traps (RST) within the Lemhi River to the native redband and non-native coastal lineages (`r figs('fig_1', display = 'cite')`, `r tabs('tab_5', display = 'cite')`). We evaluated emigrants captured at the Hayden Creek (*n* = 61) and upper Lemhi River (*n* = 64) RSTs in 2010 and at the lower Lemhi River (*n* = 100) RST in 2013. The majority of juveniles at the Hayden Creek and lower Lemhi River RSTs assigned back to the native redband lineage; whereas the large majority of juveniles at the upper Lemhi River RST were non-native coastal rainbow trout. For the RST juvenile emigrant collections we estimated the proportion membership to the native redband collection of each as follows: Hayden Creek 2010 (0.90), upper Lemhi River 2010 (0.33), lower Lemhi River 2013 (0.86). `r tabs('tab_5', display = 'cite')` shows the number of individuals by RST collection that assigned to each of the lineages.
+
+```{r OmyHAYW10C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyHAYW10C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = 'Hayden Creek RST 2010')
+```
+
+```{r OmyLEMW10C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyLEMW10C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = 'upper Lemhi River RST 2010')
+```
+
+```{r OmyLL3A13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyLL3A13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = 'lower Lemhi River RST 2013')
+```
+`r figs('fig_1', display = 'full')`
+
+`r tabs('tab_5')`
+```{r rstIndTable, eval = TRUE, echo = FALSE}
+rstInds <-  select(individuals, Pedigree, Individual, lineage) %>%
+  filter(Pedigree %in% c('OmyHAYW10C','OmyLEMW10C','OmyLL3A13C')) %>%
+  droplevels()
+rstTable <- table(rstInds$Pedigree, rstInds$lineage)
+kable(rstTable, col.names = c('Coastal','Introgressed','Redband'), align = 
+        c('c','c','c'))
+```
+
+### Roving Electrofishing Collections
+
+```{r rovingProps, eval = TRUE, echo = FALSE}
+# Filter and arrange rovingCollections
+rovingCollections <- filter(collections, CollectionMethod == 'Electrofishing', NumGenotyped > 0) %>%
+  select(Pedigree.name, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+
+# Trim factors and reorder by pRedband.
+rovingCollections$Pedigree.name <- factor(rovingCollections$Pedigree.name) 
+rovingCollections$Pedigree.name <- reorder(rovingCollections$Pedigree.name, -rovingCollections$pRedband) 
+
+# Transform to long form
+rovingCollections <- gather(rovingCollections, variable, value, -Pedigree.name)
+
+# Get Sample Sizes for plot
+sampSize <- collections$SampleSize[match(unique(rovingCollections$Pedigree.name), collections$Pedigree.name)]
+```
+
+We estimated the proportional membership of the 13 roving electrofishing collections to each of the 1) native redband trout *O. mykiss gairdneri* (pRedband) and 2) non-native coastal rainbow trout *O. mykiss irideus* (pCoastal) lineages.
+
+```{r rovingPlot, eval = TRUE, echo = FALSE, fig.align = 'center'}
+# Plot
+ggplot(rovingCollections, aes(x = Pedigree.name, y = value, fill = variable)) +
+  geom_bar(stat = 'identity') +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  geom_text(aes(label = c(rep('',13), sampSize)), size = 3, hjust = 0.5, vjust = 2) +
+  theme(axis.text.x  = element_text(angle = -45, hjust = 0)) +
+  labs(x = 'Collection', y = 'Proportion Membership to Lineage', title = 'Lemhi Electrofishing Surveys')
+```
+`r figs('fig_2', display = 'full')`
+
+```{r lfHistograms, eval = TRUE, echo = FALSE, out.width = '800px', fig.align = 'center'}
+rovingList <- as.character(unique(rovingCollections$Pedigree.name))
+rovingInds <- select(individuals, Pedigree, Individual, PITTagNum, lineage, pCoastal, pRedband, DateSampled, LengthFork1, GenSex) %>%
+  filter(Pedigree %in% rovingList) %>%
+  droplevels()
+rovingInds$Pedigree <- factor(rovingInds$Pedigree, levels = rovingList)
+
+ggplot(data = rovingInds, aes(x = LengthFork1)) +
+  geom_histogram(aes(fill = lineage), binwidth = 50) +
+  scale_fill_manual(values = c('dodgerblue2','limegreen','indianred1')) +
+  facet_wrap(~ Pedigree, scales = 'free_y') +
+  theme_bw() +
+  labs(x = 'Fork Length (mm)',
+       y = 'Frequency')
+```
+`r figs('fig_3', display = 'full')`
+
+```{r OmyAGCY13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyAGCY13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyBOHA13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyBOHA13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyHYDN13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyHYDN13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyHYDN09C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyHYDN09C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyBTMB13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyBTMB13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyWIMP13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyWIMP13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyKENY13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyKENY13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyCNYL13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyCNYL13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyLSPR13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyLSPR13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyBSPR11C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyBSPR11C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyLEMH13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyLEMH13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyBSPR13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyBSPR13C'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+
+```{r OmyLEMH10C_1, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
+pdgr <- 'OmyLEMH10C_1'
+structureInds <- filter(individuals, Pedigree == pdgr) %>%
+  select(Individual, pCoastal, pRedband) %>%
+  arrange(-pRedband)
+structureInds$Individual <- reorder(structureInds$Individual, -structureInds$pRedband)
+structureInds <- gather(structureInds, variable, value, - Individual)
+
+# Plot
+ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
+  geom_bar(stat = 'identity', width = 1) +
+  scale_fill_manual(values = c('dodgerblue2','indianred1')) +
+  theme(axis.text = element_blank(),
+        axis.ticks.x = element_blank()) +
+  labs(y = 'p(Membership)',
+       title = pdgr)
+```
+`r figs('fig_4', display = 'full')`
+
+# Discussion
+
+Some discussion stuff here...
+
+# Literature Cited
+
+Ackerman, M.W., N. Vu, J. McCane, C.A. Steele, M.R. Campbell, A.P. Matala, J.E. Hess, and S.R. Narum. 2012. Chinook and steelhead genotyping for genetic stock identification at Lower Granite Dam. Annual Report to the Bonneville Power Administration, Project 2010-026-00, Portland, Oregon.
+
+Anderson, E.C. 2010. Computational algorithms and user-friendly software for parentage-based tagging of Pacific salmonids [online]. Final report submitted to the Pacific Salmon Commission's Chinook Technical Committee (US Section). <http://swfsc.noaa.gov/textblock.aspx?Division=FED&ParentMenuId=54&id=16021>
+
+Bowersox, B., T. wickersham, L. Redfield, and M.W. Ackerman. 2016. The genetic relationship between anadromous and resident *Onchorhynchus mykiss* at a putative barrier with implications for habitat improvement. Transactions of the American Fisheries Society 145:305-318.
+
+Campbell, M.R., C.C. Kozfkay, T. Copeland, W.C. Schrader, M.W. Ackerman, and S.R. Narum. 2012. Estimating abundance and life history characteristics of threatened wild Snake River steelhead stocks by using genetic stock identification. Transactions of the American Fisheries Society 141:1310-1327.
+
+Endangered Species Act of 1973. U.S. Statutes at Large 87:884-903.
+
+Hess, J.E., N.R. Campbell, A.P. Matala, D.J. Hasselman, and S.R. Narum. 2016. Annual Report: Genetic Assessment of Columbia River Stocks. U.S. Dept. of Energy Bonneville Power Administration Report Project #2008-907-00. <http://www.critfc.org/blog/reports/2014-annual-report-genetic-assessment-columbia-river-stocks/>
+
+Lew, R.M., A.J. Finger, M.R. Baerwald, A. Goodbla, B. May, and M.H. Meek. 2015. Using next-generation sequencing to assist a conservation hatchery: A single-nucleotide panel for the genetic management of endangered Delta Smelt. Transactions of the American Fisheries Society 144:767-779.
+
+Matala, A.P., M.W. Ackerman, M.R. Campbell, and S.R. Narum. 2014. Relative contributions of neutral and non-neutral genetic differentiation to inform conservation of steelhead trout across highly variable landscapes. Evolutionary Applications 7:682-701.
+
+Matter, A.L. and B.P. Sandford. 2003. A comparison of migration rates of radio- and PIT-tagged adult Snake River Chinook salmon through the Columbia River hydropower system. North American Journal of Fisheries Management 23:967-973.
+
+NMFS (National Marine Fisheries Service). 1997. Endangered and threatened species: listing of several evolutionarily significant units (ESUs) of West Coast steelhead. Federal Register 62:159 (18 August 1997):43937-43954. 
+
+Pritchard, J.K., M. Stephens, and P. Donnelly. 2000. Inference of population structure using multilocus genotype data. Genetics 155:945-959.
+
+Raymond, H.L. 1988. Effects of hydroelectric development and fisheries enhancement on spring and summer Chinook salmon and steelhead in the Columbia River basin. North American Journal of Fisheries Management 8:1-24.
+
+Rechisky, E.L., D.W. Welch, A.D. Porter, J.E. Hess, and S.R. Narum. 2014. Testing for delayed mortality effects in the early marine life history of Columbia River Basin yearling Chinook salmon. Marine Ecology Prograss Series 496:159-180.
+
+Seeb, J.W., C.E. Pascal, R. Ramakrishnan, and L.W. Seeb. 2009. SNP genotyping by the 5'-nuclease reaction: advances in high-throughput genotyping with nonmodel organisms. Pages 277-292 *in* A. Komar, editor. Methods in molecular biology; single-nucleotide polymorphisms, 2nd edition. Humana Press, Totowa, New Jersey.
+
+Steele, C.A., E.C. Anderson, M.W. Ackerman, M.A. Hess, N.R. Campbell, S.R. Narum, and M.R. Campbell. 2013. A validation of parentage-based tagging using hatchery steelhead in the Snake River basin. Canadian Journal of Fisheries and Aquatic Sciences 70:1046-1054.
+
+Tabor, R.A., R.S. Shively, and T.P. Poe. 1993. Predation on juvenile salmonids by Smallmouth Bass and Northern Squawfish in the Columbia River near Richland, Washington. North American Journal of Fisheries Management 13:831-838.
+
+Waples, R.S., R.W. Zabel, M.D. Scheuerell, and B.L. Sanderson. 2008. Evolutionary responses by native species to major anthropogenic changes to their ecosystems: Pacific salmon in the Columbia River hydropower system. Molecular Ecology 17:84-96.
+
+Williams, R.N., P.A. Bisson, D.L. Bottom, L.D. Calvin, C.C. Coutant, M.W. Erho Jr., C.A. Frissell, J.A. Lichatowich, W.J. Liss, W.E. McConnaha, P.R. Mundy, J.A. Stanford, and R.R. Whitney. 1999. Return to the river: scientific issues in the restoration of salmonid fishes in the Columbia River. Fisheries 24(3):10-19. 

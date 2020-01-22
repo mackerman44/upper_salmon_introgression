@@ -1,0 +1,118 @@
+Basin,Lineage,LifeStage,Stream,Year,CollectionMethod,Agency,Pedigree name,SampleSize,NumGenotyped,pCoastal,pRedband,Stream,ProjectName,Latitude,Longitude,Datum,UTMEast,UTMNorth,UTMZone
+Lemhi,Unknown,Adult,Agency Creek,2013,Weir,IDFG,OmyAGCY13S,5,5,0.095,0.905,Agency Creek -> Lemhi River - HydroID: 1771,SY2013 Lemhi River O. mykiss Introgression,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Adult,Big Timber Creek,2012,Weir,IDFG,OmyBTMB12S,2,2,NA,NA,Big Timber Creek -> Lemhi River - HydroID: 1526,SY2012 Lemhi River O. mykiss Introgression,44.68407,-113.36914,WGS84,312251,4950587,12
+Lemhi,Unknown,Adult,Big Timber Creek,2013,Weir,IDFG,OmyBTMB13S,1,1,NA,NA,Big Timber Creek -> Lemhi River - HydroID: 1526,SY2013 Lemhi River O. mykiss Introgression,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Adult,Bohannon Creek,2012,Weir,IDFG,OmyBOHA12S,23,23,0.059,0.941,Bohannon Creek -> Lemhi River - HydroID: 1885,SY2012 Lemhi River O. mykiss Introgression,45.11242,-113.74626,WGS84,283976,4999109,12
+Lemhi,Unknown,Adult,Bohannon Creek,2013,Weir,IDFG,OmyBOHA13S,8,8,0.064,0.936,Bohannon Creek -> Lemhi River - HydroID: 1885,SY2013 Lemhi River O. mykiss Introgression,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Adult,Canyon Creek,2012,Weir,IDFG,OmyCNYL12S,2,2,0.405,0.595,Canyon Creek -> Lemhi River - HydroID: 1524,SY2012 Lemhi River O. mykiss Introgression,44.69165,-113.35629,WGS84,313294,4951399,12
+Lemhi,Unknown,Adult,Hayden Creek,2012,Weir,IDFG,OmyHAYW12S,28,28,0.05,0.95,Hayden Creek -> Lemhi River - HydroID: 1741,SY2012 Lemhi River O. mykiss Introgression,45.85998,-113.63239,WGS84,295656,5081861,12
+Lemhi,Unknown,Adult,Hayden Creek,2013,Weir,IDFG,OmyHAYW13S,8,8,0.095,0.905,Hayden Creek -> Lemhi River - HydroID: 1741,SY2013 Lemhi River O. mykiss Introgression,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Adult,Kenney Creek,2012,Weir,IDFG,OmyKENY12S,9,9,0.093,0.907,Kenney Creek -> Lemhi River - HydroID: 1782,SY2012 Lemhi River O. mykiss Introgression,45.02684,-113.65466,WGS84,290869,4989362,12
+Lemhi,Unknown,Adult,Kenney Creek,2013,Weir,IDFG,OmyKENY13S,6,6,0.163,0.837,Kenney Creek -> Lemhi River - HydroID: 1782,SY2013 Lemhi River O. mykiss Introgression,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Adult,Pratt Creek,2013,Weir,IDFG,OmyPRAT13S,7,7,0.034,0.966,Pratt Creek -> Lemhi River - HydroID: 1834,SY2013 Lemhi River O. mykiss Introgression,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Adult,Wimpey Creek,2012,Weir,IDFG,OmyWIMP12S,21,21,0.034,0.966,Wimpey Creek -> Lemhi River - HydroID: 1850,SY2012 Lemhi River O. mykiss Introgression,45.09756,-113.72044,WGS84,285952,4997390,12
+Lemhi,Unknown,Adult,Wimpey Creek,2013,Weir,IDFG,OmyWIMP13S,2,2,0.009,0.991,Wimpey Creek -> Lemhi River - HydroID: 1850,SY2013 Lemhi River O. mykiss Introgression,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Juvenile,Hayden Creek,2010,Screw trap,QCI,OmyHAYW10C,61,61,0.1,0.9,Hayden Creek -> Lemhi River - HydroID: 1741,CY2010 Lemhi ISEMP STHD-juv,44.861557,-113.631885,WGS84,292068,4970946,12
+Lemhi,Unknown,Juvenile,Hayden Creek,2011,Screw trap,QCI,OmyHAYW11C,119,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2011 Lemhi ISEMP STHD-juv,44.861557,-113.631885,WGS84,292068,4970946,12
+Lemhi,Unknown,Juvenile,Hayden Creek,2013,Screw trap,IDFG,OmyHAYW13C,120,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2013 Lemhi ISEMP STHD-juv,44.861557,-113.631885,WGS84,292068,4970946,12
+Lemhi,Unknown,Juvenile,Hayden Creek,2014,Screw trap,IDFG,OmyHAYW14C,100,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2014 Lemhi ISEMP STHD-juv,44.8616,-113.63188,WGS84,292068,4970947,12
+Lemhi,Unknown,Juvenile,Hayden Creek,2015,Screw trap,IDFG,OmyHAYW15C,120,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2015 Lemhi ISEMP STHD-juv,44.8616,-113.63188,WGS84,292068,4970947,12
+Lemhi,Unknown,Juvenile,Hayden Creek,2016,Screw trap,IDFG,OmyHAYW16C,91,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2016 Lemhi ISEMP STHD-juv,44.8616,-113.63188,WGS84,292068,4970947,12
+Lemhi,Unknown,Juvenile,Lemhi River,2004,Screw trap,IDFG,OmyLEMW04C,70,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2004 Snake R. STHD wild juveniles(weirs),44.826278,-113.602499,WGS84,294264,4966952,12
+Lemhi,Unknown,Juvenile,Lemhi River,2008,Screw trap,IDFG,OmyLEMW08C,60,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2008 Snake R. STHD wild juveniles(weirs),44.826278,-113.602499,WGS84,294264,4966952,12
+Lemhi,Unknown,Juvenile,Lemhi River,2010,Screw trap,QCI,OmyLEMW10C,96,64,0.67,0.33,Lemhi River -> Salmon River - HydroID: 2008,CY2010 Lemhi ISEMP STHD-juv,44.86917,-113.6251,WGS84,292631,4971771,12
+Lemhi,Unknown,Juvenile,Lemhi River,2011,Screw trap,QCI,OmyLEMW11C,99,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2011 Lemhi ISEMP STHD-juv,44.86917,-113.6251,WGS84,292631,4971771,12
+Lemhi,Unknown,Juvenile,Lemhi River,2013,Screw trap,IDFG,OmyLEMW13C,151,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2013 Lemhi ISEMP STHD-juv,44.86917,-113.6251,WGS84,292631,4971771,12
+Lemhi,Unknown,Juvenile,Lemhi River,2014,Screw trap,IDFG,OmyLEMW14C,119,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2014 Lemhi ISEMP STHD-juv,44.86917,-113.6251,WGS84,292631,4971771,12
+Lemhi,Unknown,Juvenile,Lemhi River,2015,Screw trap,IDFG,OmyLEMW15C,121,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2015 Lemhi ISEMP STHD-juv,44.86917,-113.6251,WGS84,292631,4971771,12
+Lemhi,Unknown,Juvenile,Lemhi River,2016,Screw trap,IDFG,OmyLEMW16C,100,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2016 Lemhi ISEMP STHD-juv,44.86917,-113.6251,WGS84,292631,4971771,12
+Lemhi,Unknown,Juvenile,Lemhi River,2010,Screw trap,QCI,OmyLL3A10C,93,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2010 Lemhi ISEMP STHD-juv,45.15296,-113.81357,WGS84,278838,5003795,12
+Lemhi,Unknown,Juvenile,Lemhi River,2011,Screw trap,QCI,OmyLL3A11C,113,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2010 Lemhi ISEMP STHD-juv,45.15296,-113.81357,WGS84,278838,5003795,12
+Lemhi,Unknown,Juvenile,Lemhi River,2013,Screw trap,QCI,OmyLL3A13C,100,100,0.141,0.859,Lemhi River -> Salmon River - HydroID: 2008,CY2013 Lemhi ISEMP STHD-juv,45.15296,-113.81357,WGS84,278838,5003795,12
+Lemhi,Unknown,Juvenile,Lemhi River,2014,Screw trap,QCI,OmyLL3A14C,100,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2014 Lemhi ISEMP STHD-juv,45.159641,-113.833012,WGS84,278838,5003795,12
+Lemhi,Unknown,Juvenile,Lemhi River,2015,Screw trap,QCI,OmyLL3A15C,200,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2015 Lemhi ISEMP STHD-juv,45.159641,-113.833012,WGS84,278838,5003795,12
+Lemhi,Unknown,Mixed,Agency Creek,2009,Electrofishing,QCI,OmyAGCY09C,39,0,NA,NA,Agency Creek -> Lemhi River - HydroID: 1771,CY2009 Lemhi ISEMP STHD-juv,NA,NA,WGS84,291262,4982091,12
+Lemhi,Unknown,Mixed,Agency Creek,2010,Electrofishing,QCI,OmyAGCY10C,40,0,NA,NA,Agency Creek -> Lemhi River - HydroID: 1771,CY2010 Lemhi ISEMP STHD-juv,44.964138,-113.646908,WGS84,291253,4982380,12
+Lemhi,Unknown,Mixed,Agency Creek,2011,Electrofishing,QCI,OmyAGCY11C,61,0,NA,NA,Agency Creek -> Lemhi River - HydroID: 1771,CY2011 Lemhi ISEMP STHD-juv,44.964138,-113.646908,WGS84,291253,4982380,12
+Lemhi,Unknown,Mixed,Agency Creek,2013,Electrofishing,QCI,OmyAGCY13C,40,40,0.084,0.916,Agency Creek -> Lemhi River - HydroID: 1771,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Agency Creek,2014,Electrofishing,QCI,OmyAGCY14C,38,0,NA,NA,Agency Creek -> Lemhi River - HydroID: 1771,CY2014 Lemhi ISEMP STHD-juv,44.972432,-113.526612,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Agency Creek,2015,Electrofishing,QCI,OmyAGCY15C,40,0,NA,NA,Agency Creek -> Lemhi River - HydroID: 1771,CY2015 Lemhi ISEMP STHD-juv,44.954788,-113.550968,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Eightimile Creek,2014,Electrofishing,QCI,OmyBIG814C,39,0,NA,NA,Big Eightmile Creek -> Lemhi River - HydroID: 1595,CY2014 Lemhi ISEMP STHD-juv,44.735568,-113.464253,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Eightimile Creek,2015,Electrofishing,QCI,OmyBIG815C,31,0,NA,NA,Big Eightmile Creek -> Lemhi River - HydroID: 1595,CY2015 Lemhi ISEMP STHD-juv,44.737095,-113.46323,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Springs Creek,2011,Electrofishing,QCI,OmyBSPR11C,15,15,0.723,0.277,Big Springs Creek -> Lemhi River - HydroID: 1622,CY2011 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Springs Creek,2013,Electrofishing,QCI,OmyBSPR13C,20,20,0.766,0.234,Big Springs Creek -> Lemhi River - HydroID: 1622,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Springs Creek,2014,Electrofishing,QCI,OmyBSPR14C,20,0,NA,NA,Big Springs Creek -> Lemhi River - HydroID: 1622,CY2014 Lemhi ISEMP STHD-juv,44.726857,-113.432562,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Springs Creek,2015,Electrofishing,QCI,OmyBSPR15C,40,0,NA,NA,Big Springs Creek -> Lemhi River - HydroID: 1622,CY2015 Lemhi ISEMP STHD-juv,44.727018,-113.43262,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Timber Creek,2010,Electrofishing,QCI,OmyBTMB10C,27,0,NA,NA,Big Timber Creek -> Lemhi River - HydroID: 1526,CY2010 Lemhi ISEMP STHD-juv,44.699438,-113.375569,WGS84,311792,4952311,12
+Lemhi,Unknown,Mixed,Big Timber Creek,2011,Electrofishing,QCI,OmyBTMB11C,74,0,NA,NA,Big Timber Creek -> Lemhi River - HydroID: 1526,CY2011 Lemhi ISEMP STHD-juv,44.699438,-113.375569,WGS84,311792,4952311,12
+Lemhi,Unknown,Mixed,Big Timber Creek,2012,Electrofishing,QCI,OmyBTMB12C,2,0,NA,NA,Big Timber Creek -> Lemhi River - HydroID: 1526,CY2012 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Timber Creek,2013,Electrofishing,QCI,OmyBTMB13C,53,53,0.137,0.863,Big Timber Creek -> Lemhi River - HydroID: 1526,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Timber Creek,2014,Electrofishing,QCI,OmyBTMB14C,60,0,NA,NA,Big Timber Creek -> Lemhi River - HydroID: 1526,CY2014 Lemhi ISEMP STHD-juv,44.665655,-113.375847,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Big Timber Creek,2015,Electrofishing,QCI,OmyBTMB15C,59,0,NA,NA,Big Timber Creek -> Lemhi River - HydroID: 1526,CY2015 Lemhi ISEMP STHD-juv,44.659297,-113.378293,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Bohannon Creek,2010,Electrofishing,QCI,OmyBOHA10C,40,0,NA,NA,Bohannon Creek -> Lemhi River - HydroID: 1885,CY2010 Lemhi ISEMP STHD-juv,45.111929,-113.747225,WGS84,283899,4999062,12
+Lemhi,Unknown,Mixed,Bohannon Creek,2011,Electrofishing,QCI,OmyBOHA11C,75,0,NA,NA,Bohannon Creek -> Lemhi River - HydroID: 1885,CY2011 Lemhi ISEMP STHD-juv,45.111929,-113.747225,WGS84,283899,4999062,12
+Lemhi,Unknown,Mixed,Bohannon Creek,2013,Electrofishing,QCI,OmyBOHA13C,40,40,0.09,0.91,Bohannon Creek -> Lemhi River - HydroID: 1885,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Bohannon Creek,2014,Electrofishing,QCI,OmyBOHA14C,30,0,NA,NA,Bohannon Creek -> Lemhi River - HydroID: 1885,CY2014 Lemhi ISEMP STHD-juv,45.123438,-113.731548,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Bohannon Creek,2015,Electrofishing,QCI,OmyBOHA15C,40,0,NA,NA,Bohannon Creek -> Lemhi River - HydroID: 1885,CY2015 Lemhi ISEMP STHD-juv,45.13592,-113.71814,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Canyon Creek,2010,Electrofishing,QCI,OmyCNYL10C,40,0,NA,NA,Canyon Creek -> Lemhi River - HydroID: 1524,CY2010 Lemhi ISEMP STHD-juv,44.691182,-113.366107,WGS84,312515,4951372,12
+Lemhi,Unknown,Mixed,Canyon Creek,2011,Electrofishing,QCI,OmyCNYL11C,50,0,NA,NA,Canyon Creek -> Lemhi River - HydroID: 1524,CY2011 Lemhi ISEMP STHD-juv,44.691182,-113.366107,WGS84,312515,4951372,12
+Lemhi,Unknown,Mixed,Canyon Creek,2013,Electrofishing,QCI,OmyCNYL13C,42,42,0.354,0.646,Canyon Creek -> Lemhi River - HydroID: 1524,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Canyon Creek,2014,Electrofishing,QCI,OmyCNYL14C,30,0,NA,NA,Canyon Creek -> Lemhi River - HydroID: 1524,CY2014 Lemhi ISEMP STHD-juv,44.691128,-113.363272,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Canyon Creek,2015,Electrofishing,QCI,OmyCNYL15C,37,0,NA,NA,Canyon Creek -> Lemhi River - HydroID: 1524,CY2015 Lemhi ISEMP STHD-juv,44.697008,-113.337848,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Hayden Creek,2009,Electrofishing,QCI,OmyHYDN09C,34,34,0.114,0.886,Hayden Creek -> Lemhi River - HydroID: 1741,CY2009 Lemhi ISEMP STHD-juv,NA,NA,WGS84,292590,4971638,12
+Lemhi,Unknown,Mixed,Hayden Creek,2010,Electrofishing,QCI,OmyHYDN10C,40,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2010 Lemhi ISEMP STHD-juv,NA,NA,WGS84,292590,4971638,12
+Lemhi,Unknown,Mixed,Hayden Creek,2011,Electrofishing,QCI,OmyHYDN11C,29,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2011 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Hayden Creek,2013,Electrofishing,QCI,OmyHYDN13C,40,40,0.091,0.909,Hayden Creek -> Lemhi River - HydroID: 1741,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Hayden Creek,2014,Electrofishing,QCI,OmyHYDN14C,40,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2014 Lemhi ISEMP STHD-juv,44.796783,-113.697857,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Hayden Creek,2015,Electrofishing,QCI,OmyHYDN15C,40,0,NA,NA,Hayden Creek -> Lemhi River - HydroID: 1741,CY2015 Lemhi ISEMP STHD-juv,44.78774,-113.703933,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Kenney Creek,2010,Electrofishing,QCI,OmyKENY10C,40,0,NA,NA,Kenney Creek -> Lemhi River - HydroID: 1782,CY2010 Lemhi ISEMP STHD-juv,45.031932,-113.643013,WGS84,291806,4989901,12
+Lemhi,Unknown,Mixed,Kenney Creek,2011,Electrofishing,QCI,OmyKENY11C,68,0,NA,NA,Kenney Creek -> Lemhi River - HydroID: 1782,CY2011 Lemhi ISEMP STHD-juv,45.031932,-113.643013,WGS84,291806,4989901,12
+Lemhi,Unknown,Mixed,Kenney Creek,2013,Electrofishing,QCI,OmyKENY13C,40,40,0.203,0.797,Kenney Creek -> Lemhi River - HydroID: 1782,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Kenney Creek,2014,Electrofishing,QCI,OmyKENY14C,30,0,NA,NA,Kenney Creek -> Lemhi River - HydroID: 1782,CY2014 Lemhi ISEMP STHD-juv,45.02704,-113.654117,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Kenney Creek,2015,Electrofishing,QCI,OmyKENY15C,24,0,NA,NA,Kenney Creek -> Lemhi River - HydroID: 1782,CY2015 Lemhi ISEMP STHD-juv,45.047678,-113.609832,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Lee Creek,2014,Electrofishing,QCI,OmyLEEC14C,10,0,NA,NA,Lee Creek -> Lemhi River - HydroID: 1610,CY2014 Lemhi ISEMP STHD-juv,44.745945,-113.475445,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Lee Creek,2015,Electrofishing,QCI,OmyLEEC15C,15,0,NA,NA,Lee Creek -> Lemhi River - HydroID: 1610,CY2015 Lemhi ISEMP STHD-juv,44.745937,-113.475547,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Lemhi River,2000,NA,NA,OmyLEMH00C,52,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2000 Snake R. STHD Baseline juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Lemhi River,2009,Electrofishing,QCI,OmyLEMH09C,39,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2009 Lemhi ISEMP STHD-juv,NA,NA,WGS84,273036,5007677,12
+Lemhi,Unknown,Mixed,Lemhi River,2010,Electrofishing,QCI,OmyLEMH10C_1,40,40,0.818,0.182,Lemhi River -> Salmon River - HydroID: 2008,CY2010 Lemhi ISEMP STHD-juv,44.681993,-113.353834,WGS84,313458,4950323,12
+Lemhi,Unknown,Mixed,Lemhi River,2011,Electrofishing,QCI,OmyLEMH11C,65,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2011 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Lemhi River,2013,Electrofishing,QCI,OmyLEMH13C,74,74,0.762,0.238,Lemhi River -> Salmon River - HydroID: 2008,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Lemhi River,2014,Electrofishing,QCI,OmyLEMH14C,52,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2014 Lemhi ISEMP STHD-juv,44.69315,-113.367027,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Lemhi River,2015,Electrofishing,QCI,OmyLEMH15C,50,0,NA,NA,Lemhi River -> Salmon River - HydroID: 2008,CY2015 Lemhi ISEMP STHD-juv,44.694268,-113.36748,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Little Springs Creek,2011,Electrofishing,QCI,OmyLSPR11C,6,0,NA,NA,Little Springs Creek -> Lemhi River - HydroID: 60006,CY2011 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Little Springs Creek,2013,Electrofishing,QCI,OmyLSPR13C,40,40,0.63,0.37,Little Springs Creek -> Lemhi River - HydroID: 60006,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Little Springs Creek,2014,Electrofishing,QCI,OmyLSPR14C,39,0,NA,NA,Little Springs Creek -> Lemhi River - HydroID: 60006,CY2014 Lemhi ISEMP STHD-juv,44.77968,-113.543937,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Little Springs Creek,2015,Electrofishing,QCI,OmyLSPR15C,29,0,NA,NA,Little Springs Creek -> Lemhi River - HydroID: 60006,CY2015 Lemhi ISEMP STHD-juv,44.780347,-113.544952,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Mill Creek,2010,Electrofishing,QCI,OmyMILM10C,4,0,NA,NA,Mill Creek -> Lemhi River - HydroID: 1632,CY2010 Lemhi ISEMP STHD-juv,44.768559,-113.513037,WGS84,301138,4960317,12
+Lemhi,Unknown,Mixed,Mill Creek,2015,Electrofishing,QCI,OmyMILM15C,8,0,NA,NA,Mill Creek -> Lemhi River - HydroID: 1632,CY2015 Lemhi ISEMP STHD-juv,44.761408,-113.523305,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Pattee Creek,2011,Electrofishing,QCI,OmyPATE11C,3,0,NA,NA,Pattee Creek -> Lemhi River - HydroID: 1767,CY2011 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Pratt Creek,2014,Electrofishing,QCI,OmyPRAT14C,40,0,NA,NA,Pratt Creek -> Lemhi River - HydroID: 1834,CY2014 Lemhi ISEMP STHD-juv,45.082648,-113.688218,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Pratt Creek,2015,Electrofishing,QCI,OmyPRAT15C,60,0,NA,NA,Pratt Creek -> Lemhi River - HydroID: 1834,CY2015 Lemhi ISEMP STHD-juv,45.093472,-113.656537,WGS84,NA,NA,NA
+Lemhi,Unknown,Mixed,Wimpey Creek,2009,Electrofishing,QCI,OmyWIMP09C,21,0,NA,NA,Wimpey Creek -> Lemhi River - HydroID: 1850,CY2009 Lemhi ISEMP STHD-juv,NA,NA,WGS84,285959,4997210,12
+Lemhi,Unknown,Mixed,Wimpey Creek,2010,Electrofishing,QCI,OmyWIMP10C,40,0,NA,NA,Wimpey Creek -> Lemhi River - HydroID: 1850,CY2010 Lemhi ISEMP STHD-juv,45.097658,-113.720384,WGS84,285957,4997405,12
+Lemhi,Unknown,Mixed,Wimpey Creek,2011,Electrofishing,QCI,OmyWIMP11C,50,0,NA,NA,Wimpey Creek -> Lemhi River - HydroID: 1850,CY2011 Lemhi ISEMP STHD-juv,45.097658,-113.720384,WGS84,285957,4997405,12
+Lemhi,Unknown,Mixed,Wimpey Creek,2013,Electrofishing,QCI,OmyWIMP13C,36,36,0.148,0.852,Wimpey Creek -> Lemhi River - HydroID: 1850,CY2013 Lemhi ISEMP STHD-juv,NA,NA,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Wimpey Creek,2014,Electrofishing,QCI,OmyWIMP14C,30,0,NA,NA,Wimpey Creek -> Lemhi River - HydroID: 1850,CY2014 Lemhi ISEMP STHD-juv,45.097878,-113.72022,NA,NA,NA,NA
+Lemhi,Unknown,Mixed,Wimpey Creek,2015,Electrofishing,QCI,OmyWIMP15C,40,0,NA,NA,Wimpey Creek -> Lemhi River - HydroID: 1850,CY2015 Lemhi ISEMP STHD-juv,45.097925,-113.720107,WGS84,NA,NA,NA
+Pahsimeroi,Coastal,Adult,Pahsimeroi River,2009,Weir,IDFG,OmyPAHS09S,50,50,0.849,0.151,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2009 Pahsimeroi Rainbow Trout,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Coastal,Adult,Pahsimeroi River,2010,Weir,IDFG,OmyPAHS10S,136,136,0.954,0.046,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2010 Pahsimeroi Rainbow Trout,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Coastal,Adult,Pahsimeroi River,2011,Weir,IDFG,OmyPAHS11S_1,124,124,0.949,0.051,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2011 Pahsimeroi fluvial resident Rainbow Trout,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Coastal,Adult,Pahsimeroi River,2012,Weir,IDFG,OmyPAHS12S_1,130,130,0.924,0.076,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2012 Pahsimero fluvial residenti Rainbow Trout,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Coastal,Adult,Pahsimeroi River,2013,Weir,IDFG,OmyPAHS13S_1,205,205,0.848,0.152,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2013 Pahsimeroi fluvial resident Rainbow Trout,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Coastal,Adult,Pahsimeroi River,2014,Weir,IDFG,OmyPAHS14S_1,276,276,0.894,0.106,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2014 Pahsimeroi Rainbow Trout,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Coastal,Adult,Pahsimeroi River,2015,Weir,IDFG,OmyPAHS15S_1,94,0,NA,NA,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2015 Pahsimeroi Rainbow Trout,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Coastal,Adult,Pahsimeroi River,2016,Weir,IDFG,OmyPAHS16S_1,108,0,NA,NA,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2016 Pahsimeroi Rainbow Trout,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2005,Weir,IDFG,OmyPAHS05S,41,0,NA,NA,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2005 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2006,Weir,IDFG,OmyPAHS06S,70,47,0.073,0.927,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2006 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2008,Weir,IDFG,OmyPAHS08S,43,0,NA,NA,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2008 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2009,Weir,IDFG,OmyPAHS09S_1,29,29,0.137,0.863,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2009 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2010,Weir,IDFG,OmyPAHS10S_1,157,157,0.1,0.9,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2010 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2011,Weir,IDFG,OmyPAHS11S,239,239,0.106,0.894,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2011 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2012,Weir,IDFG,OmyPAHS12S,285,285,0.029,0.971,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2012 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2013,Weir,IDFG,OmyPAHS13S,177,177,0.105,0.895,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2013 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2014,Weir,IDFG,OmyPAHS14S,205,205,0.109,0.891,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2014 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2015,Weir,IDFG,OmyPAHS15S,130,0,NA,NA,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2015 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Redband,Adult,Pahsimeroi River,2016,Weir,IDFG,OmyPAHS16S,94,0,NA,NA,Pahsimeroi River -> Salmon River - HydroID: 2233,SY2016 Snake R. STHD wild adults (weirs),44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Mixed,Juvenile,Pahsimeroi River,2014,Screw trap,IDFG,OmyPAHS14C,481,472,0.458,0.542,Pahsimeroi River -> Salmon River - HydroID: 2233,CY2014 Snake R. STHD Baseline juv,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Mixed,Juvenile,Pahsimeroi River,2015,Screw trap,IDFG,OmyPAHS15C,0,NA,NA,NA,Pahsimeroi River -> Salmon River - HydroID: 2233,CY2015 Snake R. STHD Baseline juv,44.684478,-114.040365,WGS84,734542,4952163,11
+Pahsimeroi,Mixed,Juvenile,Pahsimeroi River,2016,Screw trap,IDFG,OmyPAHS16C,200,0,NA,NA,Pahsimeroi River -> Salmon River - HydroID: 2233,CY2016 Snake R. STHD Baseline juv,44.684478,-114.040365,WGS84,734542,4952163,11

@@ -1,0 +1,14 @@
+stream,pedigree,sampleSize,numGenotyped,numAnalyzed,numPbtAssigned,OmySAWT09S,OmyPAHH08S,OmyPAHH09S
+Agency,OmyAGCY13S,5,5,0,0,0,0,0
+Big Timber,OmyBTMB12S,2,1,1,0,0,0,0
+Big Timber,OmyBTMB13S,1,1,0,0,0,0,0
+Bohannon,OmyBOHA12S,23,23,23,5,0,1,4
+Bohannon,OmyBOHA13S,8,8,0,0,0,0,0
+Canyon,OmyCNYL12S,2,2,2,0,0,0,0
+Hayden,OmyHAYW12S,28,28,28,5,2,1,2
+Hayden,OmyHAYW13S,8,8,0,0,0,0,0
+Kenney,OmyKENY12S,9,9,9,2,1,0,1
+Kenney,OmyKENY13S,6,6,0,0,0,0,0
+Pratt,OmyPRAT13S,7,7,0,0,0,0,0
+Wimpey,OmyWIMP12S,21,21,21,5,1,0,4
+Wimpey,OmyWIMP13S,2,2,0,0,0,0,0
