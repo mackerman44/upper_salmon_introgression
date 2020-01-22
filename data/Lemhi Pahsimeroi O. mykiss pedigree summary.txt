@@ -1,0 +1,118 @@
+Pedigree name	Stream	CollectionMethod	Agency	ProjectName	SampleSize	NumGenotyped	Latitude	Longitude	Datum	UTMEast	UTMNorth	UTMZone
+OmyAGCY09C	Agency Creek -> Lemhi River - HydroID: 1771	Electrofishing	QCI	CY2009 Lemhi ISEMP STHD-juv	39	0			WGS84	291262	4982091	12
+OmyAGCY10C	Agency Creek -> Lemhi River - HydroID: 1771	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	40	0	44.96413768	-113.6469084	WGS84	291253	4982380	12
+OmyAGCY11C	Agency Creek -> Lemhi River - HydroID: 1771	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	61	0	44.96413768	-113.6469084	WGS84	291253	4982380	12
+OmyAGCY13C	Agency Creek -> Lemhi River - HydroID: 1771	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	40	40						
+OmyAGCY13S	Agency Creek -> Lemhi River - HydroID: 1771	Weir	IDFG	SY2013 Lemhi River O. mykiss Introgression	5	5						
+OmyAGCY14C	Agency Creek -> Lemhi River - HydroID: 1771	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	38	0	44.97243166999999	-113.5266117				
+OmyAGCY15C	Agency Creek -> Lemhi River - HydroID: 1771	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	40	0	44.95478833	-113.5509683	WGS84			
+OmyBIG814C	Big Eightmile Creek -> Lemhi River - HydroID: 1595	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	39	0	44.73556833000001	-113.4642533				
+OmyBIG815C	Big Eightmile Creek -> Lemhi River - HydroID: 1595	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	31	0	44.737095	-113.46323	WGS84			
+OmyBSPR11C	Big Springs Creek -> Lemhi River - HydroID: 1622	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	15	15						
+OmyBSPR13C	Big Springs Creek -> Lemhi River - HydroID: 1622	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	20	20						
+OmyBSPR14C	Big Springs Creek -> Lemhi River - HydroID: 1622	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	20	0	44.72685666999999	-113.4325617				
+OmyBSPR15C	Big Springs Creek -> Lemhi River - HydroID: 1622	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	40	0	44.72701833	-113.43262	WGS84			
+OmyBTMB10C	Big Timber Creek -> Lemhi River - HydroID: 1526	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	27	0	44.69943799000001	-113.3755689	WGS84	311792	4952311	12
+OmyBTMB11C	Big Timber Creek -> Lemhi River - HydroID: 1526	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	74	0	44.69943799000001	-113.3755689	WGS84	311792	4952311	12
+OmyBTMB12C	Big Timber Creek -> Lemhi River - HydroID: 1526	Electrofishing	IDFG	CY2012 Lemhi ISEMP STHD-juv	2	0						
+OmyBTMB12S	Big Timber Creek -> Lemhi River - HydroID: 1526	Weir	IDFG	SY2012 Lemhi River O. mykiss Introgression	2	1	44.68407	-113.36914	WGS84	312251	4950587	12
+OmyBTMB13C	Big Timber Creek -> Lemhi River - HydroID: 1526	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	53	53						
+OmyBTMB13S	Big Timber Creek -> Lemhi River - HydroID: 1526	Weir	IDFG	SY2013 Lemhi River O. mykiss Introgression	1	1						
+OmyBTMB14C	Big Timber Creek -> Lemhi River - HydroID: 1526	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	60	0	44.665655	-113.3758467				
+OmyBTMB15C	Big Timber Creek -> Lemhi River - HydroID: 1526	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	59	0	44.65929700000001	-113.3782933	WGS84			
+OmyBOHA10C	Bohannon Creek -> Lemhi River - HydroID: 1885	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	40	0	45.11192913	-113.7472254	WGS84	283899	4999062	12
+OmyBOHA11C	Bohannon Creek -> Lemhi River - HydroID: 1885	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	75	0	45.11192913	-113.7472254	WGS84	283899	4999062	12
+OmyBOHA12S	Bohannon Creek -> Lemhi River - HydroID: 1885	Weir	IDFG	SY2012 Lemhi River O. mykiss Introgression	23	23	45.11242	-113.74626	WGS84	283976	4999109	12
+OmyBOHA13C	Bohannon Creek -> Lemhi River - HydroID: 1885	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	40	40						
+OmyBOHA13S	Bohannon Creek -> Lemhi River - HydroID: 1885	Weir	IDFG	SY2013 Lemhi River O. mykiss Introgression	8	8						
+OmyBOHA14C	Bohannon Creek -> Lemhi River - HydroID: 1885	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	30	0	45.12343833	-113.7315483				
+OmyBOHA15C	Bohannon Creek -> Lemhi River - HydroID: 1885	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	40	0	45.13592	-113.71814	WGS84			
+OmyCNYL10C	Canyon Creek -> Lemhi River - HydroID: 1524	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	40	0	44.69118179000001	-113.3661068	WGS84	312515	4951372	12
+OmyCNYL11C	Canyon Creek -> Lemhi River - HydroID: 1524	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	50	0	44.69118179000001	-113.3661068	WGS84	312515	4951372	12
+OmyCNYL12S	Canyon Creek -> Lemhi River - HydroID: 1524	Weir	IDFG	SY2012 Lemhi River O. mykiss Introgression	2	2	44.69165000000001	-113.35629	WGS84	313294	4951399	12
+OmyCNYL13C	Canyon Creek -> Lemhi River - HydroID: 1524	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	42	42						
+OmyCNYL14C	Canyon Creek -> Lemhi River - HydroID: 1524	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	30	0	44.69112833000001	-113.3632717				
+OmyCNYL15C	Canyon Creek -> Lemhi River - HydroID: 1524	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	37	0	44.69700833000001	-113.3378483	WGS84			
+OmyHAYW10C	Hayden Creek -> Lemhi River - HydroID: 1741	Screw trap	QCI	CY2010 Lemhi ISEMP STHD-juv	61	61	44.86155692	-113.6318847	WGS84	292068	4970946	12
+OmyHAYW11C	Hayden Creek -> Lemhi River - HydroID: 1741	Screw trap	QCI	CY2011 Lemhi ISEMP STHD-juv	119	0	44.86155692	-113.6318847	WGS84	292068	4970946	12
+OmyHAYW12S	Hayden Creek -> Lemhi River - HydroID: 1741	Weir	IDFG	SY2012 Lemhi River O. mykiss Introgression	28	28	45.85998	-113.63239	WGS84	295656	5081861	12
+OmyHAYW13C	Hayden Creek -> Lemhi River - HydroID: 1741	Screw trap	IDFG	CY2013 Lemhi ISEMP STHD-juv	120	0	44.86155692	-113.6318847	WGS84	292068	4970946	12
+OmyHAYW13S	Hayden Creek -> Lemhi River - HydroID: 1741	Weir	IDFG	SY2013 Lemhi River O. mykiss Introgression	8	8						
+OmyHAYW14C	Hayden Creek -> Lemhi River - HydroID: 1741	Screw trap	IDFG	CY2014 Lemhi ISEMP STHD-juv	100	0	44.86160000000001	-113.63188	WGS84	292068	4970947	12
+OmyHAYW15C	Hayden Creek -> Lemhi River - HydroID: 1741	Screw trap	IDFG	CY2015 Lemhi ISEMP STHD-juv	120	0	44.86160000000001	-113.63188	WGS84	292068	4970947	12
+OmyHAYW16C	Hayden Creek -> Lemhi River - HydroID: 1741	Screw trap	IDFG	CY2016 Lemhi ISEMP STHD-juv	91	0	44.86160000000001	-113.63188	WGS84	292068	4970947	12
+OmyHYDN09C	Hayden Creek -> Lemhi River - HydroID: 1741	Electrofishing	QCI	CY2009 Lemhi ISEMP STHD-juv	34	34			WGS84	292590	4971638	12
+OmyHYDN10C	Hayden Creek -> Lemhi River - HydroID: 1741	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	40	0			WGS84	292590	4971638	12
+OmyHYDN11C	Hayden Creek -> Lemhi River - HydroID: 1741	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	29	0						
+OmyHYDN13C	Hayden Creek -> Lemhi River - HydroID: 1741	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	40	40						
+OmyHYDN14C	Hayden Creek -> Lemhi River - HydroID: 1741	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	40	0	44.79678333	-113.6978567				
+OmyHYDN15C	Hayden Creek -> Lemhi River - HydroID: 1741	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	40	0	44.78773999999999	-113.7039333	WGS84			
+OmyKENY10C	Kenney Creek -> Lemhi River - HydroID: 1782	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	40	0	45.03193166	-113.6430133	WGS84	291806	4989901	12
+OmyKENY11C	Kenney Creek -> Lemhi River - HydroID: 1782	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	68	0	45.03193166	-113.6430133	WGS84	291806	4989901	12
+OmyKENY12S	Kenney Creek -> Lemhi River - HydroID: 1782	Weir	IDFG	SY2012 Lemhi River O. mykiss Introgression	9	9	45.02684	-113.65466	WGS84	290869	4989362	12
+OmyKENY13C	Kenney Creek -> Lemhi River - HydroID: 1782	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	40	40						
+OmyKENY13S	Kenney Creek -> Lemhi River - HydroID: 1782	Weir	IDFG	SY2013 Lemhi River O. mykiss Introgression	6	6						
+OmyKENY14C	Kenney Creek -> Lemhi River - HydroID: 1782	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	30	0	45.02703999999999	-113.6541167				
+OmyKENY15C	Kenney Creek -> Lemhi River - HydroID: 1782	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	24	0	45.04767800000001	-113.6098317	WGS84			
+OmyLEEC14C	Lee Creek -> Lemhi River - HydroID: 1610	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	10	0	44.745945	-113.475445				
+OmyLEEC15C	Lee Creek -> Lemhi River - HydroID: 1610	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	15	0	44.74593699999999	-113.4755467	WGS84			
+OmyLEMH00C	Lemhi River -> Salmon River - HydroID: 2008			CY2000 Snake R. STHD Baseline juv	52	0						
+OmyLEMH09C	Lemhi River -> Salmon River - HydroID: 2008	Electrofishing	QCI	CY2009 Lemhi ISEMP STHD-juv	39	0			WGS84	273036	5007677	12
+OmyLEMH10C_1	Lemhi River -> Salmon River - HydroID: 2008	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	40	40	44.68199267	-113.3538336	WGS84	313458	4950323	12
+OmyLEMH11C	Lemhi River -> Salmon River - HydroID: 2008	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	65	0						
+OmyLEMH13C	Lemhi River -> Salmon River - HydroID: 2008	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	74	74						
+OmyLEMH14C	Lemhi River -> Salmon River - HydroID: 2008	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	52	0	44.69315000000001	-113.3670267				
+OmyLEMH15C	Lemhi River -> Salmon River - HydroID: 2008	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	50	0	44.69426800000001	-113.36748	WGS84			
+OmyLEMW04C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	IDFG	CY2004 Snake R. STHD wild juveniles(weirs)	70	0	44.82627823000001	-113.6024991	WGS84	294264	4966952	12
+OmyLEMW08C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	IDFG	CY2008 Snake R. STHD wild juveniles(weirs)	60	0	44.82627823000001	-113.6024991	WGS84	294264	4966952	12
+OmyLEMW10C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	QCI	CY2010 Lemhi ISEMP STHD-juv	96	64	44.86917	-113.6251	WGS84	292631	4971771	12
+OmyLEMW11C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	QCI	CY2011 Lemhi ISEMP STHD-juv	99	0	44.86917	-113.6251	WGS84	292631	4971771	12
+OmyLEMW13C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	IDFG	CY2013 Lemhi ISEMP STHD-juv	151	0	44.86917	-113.6251	WGS84	292631	4971771	12
+OmyLEMW14C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	IDFG	CY2014 Lemhi ISEMP STHD-juv	119	0	44.86917	-113.6251	WGS84	292631	4971771	12
+OmyLEMW15C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	IDFG	CY2015 Lemhi ISEMP STHD-juv	121	0	44.86917	-113.6251	WGS84	292631	4971771	12
+OmyLEMW16C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	IDFG	CY2016 Lemhi ISEMP STHD-juv	100	0	44.86917	-113.6251	WGS84	292631	4971771	12
+OmyLL3A10C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	QCI	CY2010 Lemhi ISEMP STHD-juv	93	0	45.15296000000001	-113.81357	WGS84	278838	5003795	12
+OmyLL3A11C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	QCI	CY2010 Lemhi ISEMP STHD-juv	113	0	45.15296000000001	-113.81357	WGS84	278838	5003795	12
+OmyLL3A13C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	QCI	CY2013 Lemhi ISEMP STHD-juv	100	100	45.15296000000001	-113.81357	WGS84	278838	5003795	12
+OmyLL3A14C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	QCI	CY2014 Lemhi ISEMP STHD-juv	100	0	45.15964100000001	-113.833012	WGS84	278838	5003795	12
+OmyLL3A15C	Lemhi River -> Salmon River - HydroID: 2008	Screw trap	QCI	CY2015 Lemhi ISEMP STHD-juv	200	0	45.15964100000001	-113.833012	WGS84	278838	5003795	12
+OmyLSPR11C	Little Springs Creek -> Lemhi River - HydroID: 60006	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	6	0						
+OmyLSPR13C	Little Springs Creek -> Lemhi River - HydroID: 60006	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	40	40						
+OmyLSPR14C	Little Springs Creek -> Lemhi River - HydroID: 60006	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	39	0	44.77968	-113.5439367				
+OmyLSPR15C	Little Springs Creek -> Lemhi River - HydroID: 60006	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	29	0	44.780347	-113.5449517	WGS84			
+OmyMILM10C	Mill Creek -> Lemhi River - HydroID: 1632	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	4	0	44.76855904	-113.5130371	WGS84	301138	4960317	12
+OmyMILM15C	Mill Creek -> Lemhi River - HydroID: 1632	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	8	0	44.76140800000001	-113.523305	WGS84			
+OmyPAHS05S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2005 Snake R. STHD wild adults (weirs)	41	0	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS06S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2006 Snake R. STHD wild adults (weirs)	70	47	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS08S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2008 Snake R. STHD wild adults (weirs)	43	0	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS09S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2009 Pahsimeroi Rainbow Trout	50	50	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS09S_1	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2009 Snake R. STHD wild adults (weirs)	29	29	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS10S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2010 Pahsimeroi Rainbow Trout	136	136	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS10S_1	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2010 Snake R. STHD wild adults (weirs)	157	157	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS11S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2011 Snake R. STHD wild adults (weirs)	239	239	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS11S_1	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2011 Pahsimeroi fluvial resident Rainbow Trout	124	124	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS12S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2012 Snake R. STHD wild adults (weirs)	285	285	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS12S_1	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2012 Pahsimero fluvial residenti Rainbow Trout	130	130	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS13S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2013 Snake R. STHD wild adults (weirs)	177	177	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS13S_1	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2013 Pahsimeroi fluvial resident Rainbow Trout	205	205	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS14C	Pahsimeroi River -> Salmon River - HydroID: 2233	Screw trap	IDFG	CY2014 Snake R. STHD Baseline juv	481	472	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS14S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2014 Snake R. STHD wild adults (weirs)	205	205	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS14S_1	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2014 Pahsimeroi Rainbow Trout	276	276	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS15C	Pahsimeroi River -> Salmon River - HydroID: 2233	Screw trap	IDFG	CY2015 Snake R. STHD Baseline juv	0		44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS15S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2015 Snake R. STHD wild adults (weirs)	130	0	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS15S_1	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2015 Pahsimeroi Rainbow Trout	94	0	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS16C	Pahsimeroi River -> Salmon River - HydroID: 2233	Screw trap	IDFG	CY2016 Snake R. STHD Baseline juv	200	0	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS16S	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2016 Snake R. STHD wild adults (weirs)	94	0	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPAHS16S_1	Pahsimeroi River -> Salmon River - HydroID: 2233	Weir	IDFG	SY2016 Pahsimeroi Rainbow Trout	108	0	44.68447800000001	-114.040365	WGS84	734542	4952163	11
+OmyPATE11C	Pattee Creek -> Lemhi River - HydroID: 1767	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	3	0						
+OmyPRAT13S	Pratt Creek -> Lemhi River - HydroID: 1834	Weir	IDFG	SY2013 Lemhi River O. mykiss Introgression	7	7						
+OmyPRAT14C	Pratt Creek -> Lemhi River - HydroID: 1834	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	40	0	45.08264833	-113.6882183				
+OmyPRAT15C	Pratt Creek -> Lemhi River - HydroID: 1834	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	60	0	45.093472	-113.6565367	WGS84			
+OmyWIMP09C	Wimpey Creek -> Lemhi River - HydroID: 1850	Electrofishing	QCI	CY2009 Lemhi ISEMP STHD-juv	21	0			WGS84	285959	4997210	12
+OmyWIMP10C	Wimpey Creek -> Lemhi River - HydroID: 1850	Electrofishing	QCI	CY2010 Lemhi ISEMP STHD-juv	40	0	45.09765809	-113.7203842	WGS84	285957	4997405	12
+OmyWIMP11C	Wimpey Creek -> Lemhi River - HydroID: 1850	Electrofishing	QCI	CY2011 Lemhi ISEMP STHD-juv	50	0	45.09765809	-113.7203842	WGS84	285957	4997405	12
+OmyWIMP12S	Wimpey Creek -> Lemhi River - HydroID: 1850	Weir	IDFG	SY2012 Lemhi River O. mykiss Introgression	21	21	45.09756	-113.72044	WGS84	285952	4997390	12
+OmyWIMP13C	Wimpey Creek -> Lemhi River - HydroID: 1850	Electrofishing	QCI	CY2013 Lemhi ISEMP STHD-juv	36	36						
+OmyWIMP13S	Wimpey Creek -> Lemhi River - HydroID: 1850	Weir	IDFG	SY2013 Lemhi River O. mykiss Introgression	2	2						
+OmyWIMP14C	Wimpey Creek -> Lemhi River - HydroID: 1850	Electrofishing	QCI	CY2014 Lemhi ISEMP STHD-juv	30	0	45.09787833000001	-113.72022				
+OmyWIMP15C	Wimpey Creek -> Lemhi River - HydroID: 1850	Electrofishing	QCI	CY2015 Lemhi ISEMP STHD-juv	40	0	45.09792499999999	-113.7201067	WGS84			
