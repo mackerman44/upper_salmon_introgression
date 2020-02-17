@@ -18,7 +18,7 @@ library(ggplot2)
 library(knitr)
 library(captioner)
 library(xtable)
-setwd('C:/Users/mikea/Dropbox/lemhiPahsimeroiMykissGenetics/2017/Markdown/')
+#setwd('C:/Users/mikea/Dropbox/lemhiPahsimeroiMykissGenetics/2017/Markdown/')
 ```
 
 ```{r captioner, echo = FALSE, results = 'hide'}
@@ -36,9 +36,9 @@ figs(name = 'fig_4', 'Proportional membership coefficients (${q_i}$) for individ
 ```
 
 ```{r readData, eval = TRUE, echo = FALSE}
-collections <- read.csv('data/collections.csv')
-individuals <- read.csv('data/indData.csv')
-pbtSummary  <- read.csv('data/pbtSummary.csv')
+collections <- read.csv("../data/collections.csv")
+individuals <- read.csv("../data/indData.csv")
+pbtSummary  <- read.csv("../data/pbtSummary.csv")
 ```
 
 # Introduction
@@ -132,6 +132,8 @@ ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
         axis.ticks.x = element_blank()) +
   labs(y = 'p(Membership)',
        title = 'Hayden Creek RST 2010')
+
+ggsave("../output/figures/hayden_rst_int.pdf", height = 1.5, dpi = 500)
 ```
 
 ```{r OmyLEMW10C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
@@ -150,6 +152,8 @@ ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
         axis.ticks.x = element_blank()) +
   labs(y = 'p(Membership)',
        title = 'upper Lemhi River RST 2010')
+
+ggsave("../output/figures/upper_lemhi_rst_int.pdf", height = 1.5, dpi = 500)
 ```
 
 ```{r OmyLL3A13C, eval = TRUE, echo = FALSE, fig.height = 1.5, fig.width = 10, fig.align = 'center'}
@@ -168,6 +172,8 @@ ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
         axis.ticks.x = element_blank()) +
   labs(y = 'p(Membership)',
        title = 'lower Lemhi River RST 2013')
+
+ggsave("../output/figures/lower_lemhi_rst_int.pdf", height = 1.5, dpi = 500)
 ```
 `r figs('fig_1', display = 'full')`
 
@@ -210,6 +216,8 @@ ggplot(rovingCollections, aes(x = Pedigree.name, y = value, fill = variable)) +
   geom_text(aes(label = c(rep('',13), sampSize)), size = 3, hjust = 0.5, vjust = 2) +
   theme(axis.text.x  = element_text(angle = -45, hjust = 0)) +
   labs(x = 'Collection', y = 'Proportion Membership to Lineage', title = 'Lemhi Electrofishing Surveys')
+
+ggsave("../output/figures/efishing_int.pdf", height = 5, dpi = 500)
 ```
 `r figs('fig_2', display = 'full')`
 
@@ -227,6 +235,8 @@ ggplot(data = rovingInds, aes(x = LengthFork1)) +
   theme_bw() +
   labs(x = 'Fork Length (mm)',
        y = 'Frequency')
+
+ggsave("../output/figures/lf_histograms.pdf", height = 5, dpi = 500)
 ```
 `r figs('fig_3', display = 'full')`
 
