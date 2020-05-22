@@ -475,10 +475,6 @@ ggplot(structureInds, aes(x = Individual, y = value, fill = variable)) +
 ```
 `r figs('fig_4', display = 'full')`
 
-# Discussion
-
-Some discussion stuff here...
-
 # Literature Cited
 
 Ackerman, M.W., N. Vu, J. McCane, C.A. Steele, M.R. Campbell, A.P. Matala, J.E. Hess, and S.R. Narum. 2012. Chinook and steelhead genotyping for genetic stock identification at Lower Granite Dam. Annual Report to the Bonneville Power Administration, Project 2010-026-00, Portland, Oregon.
